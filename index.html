@@ -1,16 +1,12 @@
-<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>RentalMobil — Sewa Mobil Mudah & Cepat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css"></head><body>
-<header><b class="logo">Rental<span>Mobil</span></b><nav><a href="#katalog">Katalog</a><a href="#status">Cek Status</a><a href="#admin">Staf</a></nav></header>
-<main>
-<section id="v-katalog" class="view"><div class="hero"><h1>Sewa Mobil <span>Mudah & Cepat</span></h1><p>Tanpa login. Anti double booking.</p>
-<div class="bar"><label>Mulai<input type="date" id="d1"></label><label>Selesai<input type="date" id="d2"></label></div></div>
-<p id="info" class="muted"></p><div id="grid" class="grid"></div></section>
-<section id="v-status" class="view" hidden><h2>Cek Status & Unggah Bukti</h2>
-<form id="fs" class="box"><input id="sk" placeholder="Kode booking (RNT-...)" required><input id="sc" placeholder="No. HP atau email" required><button class="btn">Cek Status</button></form><div id="sr"></div></section>
-<section id="v-admin" class="view" hidden><div id="adm"></div></section>
-</main>
-<div id="modal" hidden><div class="sheet"><button class="x" data-a="x">✕</button><div id="mb"></div></div></div>
-<div id="toast"></div>
-<script src="js/config.js"></script><script src="js/app.js"></script></body></html>
+<link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="nav"><b class="logo">Rental<span>Mobil</span></b>
+<nav><a href="#/">Katalog</a><a href="#/status">Cek Status</a><a href="#/admin" class="out">Login Staf</a></nav></header>
+<main id="app"></main><div id="toast"></div>
+<script src="js/config.js"></script><script src="js/app.js"></script>
+</body></html>
